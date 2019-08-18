@@ -43,7 +43,15 @@ module.exports = {
   watch: true,
   watchOptions: {
     ignored: /node_modules/,
-    aggregateTimeout: 3000,
+    aggregateTimeout: 1000,
     poll: 1000
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, './dist'),
+    hot: true,
+    port: 9000
   }
 }

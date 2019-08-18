@@ -6,7 +6,7 @@ import './search.less'
 class Search extends React.Component {
   render () {
     return (
-      <div className="csstest">111sd react searcsshsdsd
+      <div className="csstest">listener react WDS wds
         <img src={ logo }></img>
       </div>
     )
